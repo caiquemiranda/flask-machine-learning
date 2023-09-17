@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Cientista de Dados</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Inclua qualquer outra folha de estilo que você deseje usar aqui -->
 </head>
 <body>
     <header>
-        <h1>Caique Miranda</h1>
-        <p>Cientista de Dados e Machine Learning</p>
+        <div class="header-container">
+            <h1>Seu Nome</h1>
+            <p>Cientista de Dados</p>
+        </div>
     </header>
 
     <nav>
@@ -23,47 +25,57 @@
     </nav>
 
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Uma breve descrição sobre você e sua paixão pela ciência de dados.</p>
+        <div class="section-container">
+            <h2>Sobre Mim</h2>
+            <p>Uma breve descrição sobre você e sua paixão pela ciência de dados.</p>
+        </div>
     </section>
 
     <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="project">
-            <h3>Nome do Projeto 1</h3>
-            <p>Uma breve descrição do projeto 1.</p>
+        <div class="section-container">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Nome do Projeto 1</h3>
+                <p>Uma breve descrição do projeto 1.</p>
+            </div>
+            <div class="project">
+                <h3>Nome do Projeto 2</h3>
+                <p>Uma breve descrição do projeto 2.</p>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
         </div>
-        <div class="project">
-            <h3>Nome do Projeto 2</h3>
-            <p>Uma breve descrição do projeto 2.</p>
-        </div>
-        <!-- Adicione mais projetos conforme necessário -->
     </section>
 
     <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>Machine Learning</li>
-            <li>Análise de Dados</li>
-            <li>Visualização de Dados</li>
-            <!-- Adicione mais habilidades conforme necessário -->
-        </ul>
+        <div class="section-container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>Machine Learning</li>
+                <li>Análise de Dados</li>
+                <li>Visualização de Dados</li>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </ul>
+        </div>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato comigo em:</p>
-        <ul>
-            <li>Email: seu@email.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/seu_perfil" target="_blank">Perfil no LinkedIn</a></li>
-            <li>GitHub: <a href="https://github.com/seu_usuario" target="_blank">GitHub</a></li>
-        </ul>
+        <div class="section-container">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo em:</p>
+            <ul>
+                <li>Email: seu@email.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/seu_perfil" target="_blank">Perfil no LinkedIn</a></li>
+                <li>GitHub: <a href="https://github.com/seu_usuario" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Seu Nome</p>
+        <div class="footer-container">
+            <p>&copy; 2023 Seu Nome</p>
+        </div>
     </footer>
 </body>
 </html>

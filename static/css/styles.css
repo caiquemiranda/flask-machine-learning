@@ -19,15 +19,20 @@ body {
     padding: 0;
 }
 
-header {
-    text-align: center;
+.header-container {
     background-color: #0077b6;
-    color: #fff;
-    padding: 40px 0;
+    text-align: center;
+    padding: 80px 0;
 }
 
 header h1 {
     font-size: 36px;
+    color: #fff;
+}
+
+header p {
+    font-size: 20px;
+    color: #fff;
 }
 
 nav ul {
@@ -45,16 +50,22 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
-}
-
-section {
-    padding: 40px;
+    font-size: 18px;
 }
 
 /* Estilos específicos para seções */
+.section-container {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 section h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
+    color: #0077b6;
 }
 
 .project {
@@ -62,12 +73,13 @@ section h2 {
 }
 
 .project h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
+    color: #333;
 }
 
 /* Rodapé */
-footer {
+.footer-container {
     text-align: center;
     padding: 20px 0;
     background-color: #333;
@@ -78,6 +90,10 @@ footer {
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
     }
 
     nav ul {
